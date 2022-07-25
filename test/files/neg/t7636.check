@@ -1,0 +1,10 @@
+t7636.scala:3: error: illegal inheritance;
+ self-type Main.bar.type does not conform to Main.Foo[T]'s selftype Main.Foo[T]
+  object bar extends Foo(5: T forSome { type T })
+                     ^
+t7636.scala:3: error: type mismatch;
+ found   : T(in constructor bar) where type T(in constructor bar)
+ required: T(in value <local Main>) where type T(in value <local Main>)
+  object bar extends Foo(5: T forSome { type T })
+                          ^
+2 errors

@@ -1,0 +1,9 @@
+t7509.scala:3: error: inferred type arguments [Int] do not conform to method crash's type parameter bounds [R <: AnyRef]
+  crash(42)
+  ^
+t7509.scala:3: error: type mismatch;
+ found   : Int(42)
+ required: R
+  crash(42)
+        ^
+2 errors
